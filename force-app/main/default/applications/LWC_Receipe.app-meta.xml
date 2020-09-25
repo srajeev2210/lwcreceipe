@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#D459CA</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>LWC Receipe</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>Hello</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>LWC_Receipe_UtilityBar</utilityBar>
+</CustomApplication>
