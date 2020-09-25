@@ -4,13 +4,13 @@
         <headerColor>#D459CA</headerColor>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
+    <description>LWC based receipe apps of all concepts.</description>
     <formFactors>Small</formFactors>
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>LWC Receipe</label>
     <navType>Standard</navType>
-    <tabs>standard-home</tabs>
     <tabs>Hello</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LWC_Receipe_UtilityBar</utilityBar>
