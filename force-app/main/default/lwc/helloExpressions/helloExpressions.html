@@ -5,6 +5,8 @@
             <lightning-input type="text" name="lastName" label="Last Name" onchange={onChangeHandler}></lightning-input>
             <p class="slds-m-top_medium">Uppercased Full Name: {upperCaseFullName}</p>
         </div>
+        <c-view-source source='lwc/helloExpressions' slot="footer">
+            Use JavaScript expressions in a template. Type something in the input fields to see the recipe in action.
+        </c-view-source>
     </lightning-card>
-    
 </template>

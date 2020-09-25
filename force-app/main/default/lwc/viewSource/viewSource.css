@@ -1,0 +1,7 @@
+.description {
+    color: #706e6b;
+}
+
+:host {
+    text-align: left;
+}

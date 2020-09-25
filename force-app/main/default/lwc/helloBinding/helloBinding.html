@@ -3,5 +3,8 @@
         <div class="slds-var-m-around_medium">Hello, {greeting}
             <lightning-input label="Name" value={greeting} onchange={onValueChange}></lightning-input>
         </div>
+        <c-view-source source='lwc/helloBinding' slot="footer">
+            Change the value of a bound property when the value of an input field changes. Type something in the input field to see the recipe in action.
+        </c-view-source>
     </lightning-card>
 </template>
