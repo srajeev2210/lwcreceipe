@@ -23,7 +23,7 @@ export default class LdsGenerateRecordInputForCreate extends LightningElement {
                 data.objectInfos[ACCOUNT_OBJECT.objectApiName] // Filters it to only createable fields
             );
             const fields = this.recordInput.fields;
-            console.log('recordInput:',JSON.stringify(this.recordInput))
+            // console.log('recordInput:',JSON.stringify(this.recordInput))
             this.accNumberCreateable = ACCNUMBER_FIELD.fieldApiName in fields;
             this.accNumber = fields[ACCNUMBER_FIELD.fieldApiName];
             this.error = undefined;
@@ -39,10 +39,10 @@ export default class LdsGenerateRecordInputForCreate extends LightningElement {
     }
 
     createAccount() {
-        console.log('RecordImput:'+JSON.stringify(this.recordInput))
+        // console.log('RecordImput:'+JSON.stringify(this.recordInput))
         createRecord(this.recordInput)
         .then((account) => {
-            console.log(JSON.stringify(account))
+            // console.log(JSON.stringify(account))
             this.dispatchEvent(
                 new ShowToastEvent({
                     title: 'Success',
@@ -52,7 +52,7 @@ export default class LdsGenerateRecordInputForCreate extends LightningElement {
             );
         })
         .catch((error) => {
-            console.log(error)
+            // console.log(error)
             this.dispatchEvent(
                 new ShowToastEvent({
                     title: 'Error creating record',
