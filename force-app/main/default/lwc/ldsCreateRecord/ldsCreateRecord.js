@@ -34,7 +34,7 @@ export default class LdsCreateRecord extends LightningElement {
                 this.dispatchEvent(
                     new ShowToastEvent({
                         title: 'Error creating record',
-                        message: reduceErrors(error).join(', '),
+                        message: 'Error',
                         variant: 'error'
                     })
                 );

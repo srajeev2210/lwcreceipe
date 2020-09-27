@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="LdsGenerateRecordInputForCreate" icon-name="standard:record">
+        <div class="slds-var-m-around_medium">
+            <template if:true={recordInput}>
+                <lightning-input label="Name" value={accName} 
+                    onchange={handleChange} data-field-name={accNameField}> 
+                </lightning-input>
+                <template if:true={accNumberCreateable}>
+                    <lightning-input type="number" class="slds-var-m-bottom_small" label="Account Number"  
+                        value={accNumber} onchange={handleChange} data-field-name={accNumberField}></lightning-input>
+                </template>
+                <lightning-button label="Create Account" variant="brand" onclick={createAccount}></lightning-button>
+            </template>
+            <template if:true={error}>
+                <p class="slds-var-m-bottom_small">errors</p>
+            </template>
+            <c-view-source source='lwc/ldsGenerateRecordInputForCreate' slot="footer">
+                Create a custom form with default values and enforcing field security using getRecordCreateDefaults and generateRecordInputForCreate. Always consider lightning-record-form or lightning-record-edit-form first.
+            </c-view-source>
+        </div>
+    </lightning-card>
+</template>
