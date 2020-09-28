@@ -5,7 +5,15 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
+    <classAccesses>
+        <apexClass>getAccountsForLdsDelete</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <custom>true</custom>
+    <tabVisibilities>
+        <tab>Data_Service</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>Hello</tab>
         <visibility>DefaultOn</visibility>
