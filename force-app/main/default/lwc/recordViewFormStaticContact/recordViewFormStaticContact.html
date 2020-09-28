@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="RecordViewFormStaticContact" icon-name="standard:contact">
+        <div class="slds-var-m-around_medium">
+            <lightning-record-view-form
+                    record-id={recordId} object-api-name={objectApiName}>
+                <lightning-output-field
+                    field-name={accountId}></lightning-output-field>
+                <lightning-output-field
+                    field-name={name}></lightning-output-field>
+                <lightning-output-field
+                    field-name={title}></lightning-output-field>
+                <lightning-output-field
+                    field-name={phone}></lightning-output-field>
+                <lightning-output-field
+                    field-name={email}></lightning-output-field>
+            </lightning-record-view-form>
+        </div>
+        <c-view-source source='lwc/recordViewFormStaticContact' slot="footer">
+            Create a read-only form for a specific record. This recipe uses a static schema definition (fields are explicitly imported).
+        </c-view-source>
+    </lightning-card>
+</template>
