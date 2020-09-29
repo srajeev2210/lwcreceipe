@@ -6,10 +6,22 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>ContactController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>getAccountsForLdsDelete</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <custom>true</custom>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Picture__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <layoutAssignments>
+        <layout>Contact-Contact %28Marketing%29 Layout</layout>
+    </layoutAssignments>
     <tabVisibilities>
         <tab>Data_Service</tab>
         <visibility>DefaultOn</visibility>
