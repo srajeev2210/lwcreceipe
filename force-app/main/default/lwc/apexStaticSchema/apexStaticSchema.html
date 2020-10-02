@@ -11,5 +11,8 @@
         <template if:true={contact.error}>
             <p class="slds-var-m-around_small">{contact.error}</p>
         </template>
+        <c-view-source source='lwc/apexStaticSchema' slot="footer">
+            Call Apex method and get SObject values using a static schema definition.
+        </c-view-source>
     </lightning-card>
 </template>
