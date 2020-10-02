@@ -9,4 +9,9 @@ public with sharing class ContactController {
             LIMIT 1
         ];
     }
+
+    @AuraEnabled(cacheable = true)
+    public static List<Contact> getContactList(){
+        return [SELECT Id, Name FROM Contact WITH SECURITY_ENFORCED];
+    }
 }

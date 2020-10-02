@@ -1,0 +1,22 @@
+<template>
+<lightning-card title="ApexWireMethodToProperty" icon-name="custom:custom63">
+    <lightning-button class="slds-float_right slds-p-right_xx-small" label="Refresh" title="Refresh Contacts" variant = "neutral" onclick={refreshContact} slot="actions"></lightning-button>
+        <template if:true={contacts.data}>
+            <div class="slds-var-m-around_medium">
+                <ul>
+                    <template for:each={contacts.data} for:item="contact">
+                        <li key={contact.Id}>
+                            <p>{contact.Name}</p>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+        </template>
+        <template if:true={contacts.error}>
+            <p class="slds-var-m-around_small">{contacts.error}</p>
+        </template>
+        <c-view-source source='lwc/apexWireMethodToProperty' slot="footer">
+            Call an Apex method that retrieves a list of records using @wire. In this recipe, the Apex method is @wired to a component property.
+        </c-view-source>
+    </lightning-card>
+</template>
