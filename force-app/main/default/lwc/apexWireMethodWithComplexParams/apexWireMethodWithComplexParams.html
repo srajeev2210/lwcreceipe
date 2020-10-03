@@ -1,0 +1,24 @@
+<template>
+
+    <lightning-card title="ApexWireMethodWithComplexParams" icon-nam="custom:custom63">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="string" label="String" class="string-input" 
+                value={stringValue} onchange={handleStringChange}></lightning-input>
+            <lightning-input type="number" label="Number" class="number-input" 
+                value={numberValue} onchange={handleNumberChange}></lightning-input>
+            <lightning-input type="number" label="List items" class="list-item-input" 
+                value={listItemValue} onchange={handleListItemChange}></lightning-input>
+
+            <template if:true={apexResponse.data}>
+                <p>{apexResponse.data}</p>
+            </template>
+        </div>
+        <template if:true={apexResponse.error}>
+            <p class=slds-var-m-around_small>{apexResponse.error}</p>
+        </template>
+        <c-view-source source='lwc/apexWireMethodWithComplexParams' slot="footer">
+            Call an Apex method with complex parameters using @wire. These parameters can be custom Apex types, as well as sObjects.
+        </c-view-source>
+    </lightning-card>
+    
+</template>
