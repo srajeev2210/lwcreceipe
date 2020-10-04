@@ -1,6 +1,5 @@
 <template>
-
-    <lightning-card title="ApexWireMethodWithComplexParams" icon-nam="custom:custom63">
+    <lightning-card title="ApexImperativeMethodWithComplexParams" icon-nam="custom:custom63">
         <div class="slds-var-m-around_medium">
             <lightning-input type="string" label="String" class="string-input" 
                 value={stringValue} onchange={handleStringChange}></lightning-input>
@@ -8,15 +7,17 @@
                 value={numberValue} onchange={handleNumberChange}></lightning-input>
             <lightning-input type="number" label="List items" class="list-item-input" 
                 value={listItemValue} onchange={handleListItemChange}></lightning-input>
+            <br/>
+            <lightning-button label="Call Apex" variant="brand" onclick={handleApexCall}></lightning-button>            
             <br/><br/>
-            <template if:true={apexResponse.data}>
-                <p>{apexResponse.data}</p>
+            <template if:true={message}>
+                <p>{message}</p>
             </template>
         </div>
-        <template if:true={apexResponse.error}>
-            <p class=slds-var-m-around_small>{apexResponse.error}</p>
+        <template if:true={error}>
+            <p class=slds-var-m-around_small>{error}</p>
         </template>
-        <c-view-source source='lwc/apexWireMethodWithComplexParams' slot="footer">
+        <c-view-source source='lwc/apexImperativeMethodWithComplexParams' slot="footer">
             Call an Apex method with complex parameters using @wire. These parameters can be custom Apex types, as well as sObjects.
         </c-view-source>
     </lightning-card>
