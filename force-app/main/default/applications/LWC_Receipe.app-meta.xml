@@ -62,6 +62,7 @@
     <tabs>Hello</tabs>
     <tabs>Data_Service</tabs>
     <tabs>standard-Contact</tabs>
+    <tabs>Apex</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LWC_Receipe_UtilityBar</utilityBar>
 </CustomApplication>

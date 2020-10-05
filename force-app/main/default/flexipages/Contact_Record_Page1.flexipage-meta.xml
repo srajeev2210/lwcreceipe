@@ -155,6 +155,11 @@
                 <componentName>recordEditFormDynamicContact</componentName>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>wireGetRecordDynamicContact</componentName>
+            </componentInstance>
+        </itemInstances>
         <name>Facet-8a55bda5-a0d6-48a0-9d5d-6073d71c8fb8</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -172,6 +177,11 @@
         <itemInstances>
             <componentInstance>
                 <componentName>recordEditFormStaticContact</componentName>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>wireGetRecordStaticContact</componentName>
             </componentInstance>
         </itemInstances>
         <name>Facet-5098f222-d8af-4b5e-a0d1-0789bb0c1c8f</name>

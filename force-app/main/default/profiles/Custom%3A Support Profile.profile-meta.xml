@@ -6,7 +6,15 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>ApexTypesController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ContactController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CustomWrapper</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -22,6 +30,10 @@
     <layoutAssignments>
         <layout>Contact-Contact %28Support%29 Layout</layout>
     </layoutAssignments>
+    <tabVisibilities>
+        <tab>Apex</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>Data_Service</tab>
         <visibility>DefaultOn</visibility>
