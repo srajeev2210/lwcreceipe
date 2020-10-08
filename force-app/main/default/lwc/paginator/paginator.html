@@ -1,0 +1,15 @@
+<template>
+
+    <lightning-layout>
+        <lightning-layout-item>
+            <lightning-button label="Previous" 
+                        onclick={handlePrevious} icon-name="utility:chevronleft"></lightning-button>
+        </lightning-layout-item>
+        <lightning-layout-item flexibility="grow"></lightning-layout-item>
+        <lightning-layout-item>
+            <lightning-button label="Next" 
+                        onclick={handleNext} icon-position="right" icon-name="utility:chevronright"></lightning-button>
+        </lightning-layout-item>
+    </lightning-layout>
+    
+</template>
