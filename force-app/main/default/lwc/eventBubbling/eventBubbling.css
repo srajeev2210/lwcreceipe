@@ -5,20 +5,25 @@ img {
     margin-bottom: var(--lwc-varSpacingXSmall, 8px);
 }
 
-c-contact-list-item {
-    border: solid var(--lwc-borderWidthThin, 1px) #ecebea;
-    border-radius: var(--lwc-borderRadiusMedium, 4px);
-    margin: var(--lwc-borderWidthThin, 4px) 0;
-    padding: 15px var(--lwc-varSpacingXxxSmall, 12px) 10px
-        var(--lwc-varSpacingXxxSmall, 2px) ;
+lightning-layout-item.wide {
+    min-width: 300px;
 }
 
-c-contact-list-item:before {
-    content: 'c-contact-list-item';
+c-contact-list-item-bubbling {
+    border: solid var(--lwc-borderWidthThin, 1px) #ecebea;
+    border-radius: var(--lwc-borderRadiusMedium, 4px);
+    margin: var(--lwc-borderWidthThin, 2px) 7px 6px;
+    padding: 12px var(--lwc-varSpacingXxxSmall, 20px)
+    var(--lwc-varSpacingXxxSmall, 15px) 40px;
+        
+}
+
+c-contact-list-item-bubbling:before {
+    content: 'c-contact-list-item-bubbling';
     color: rgb(221, 219, 218);
     position: absolute;
     top: -9px;
     left: var(--lwc-varSpacingXxSmall, 4px);
     background-color: var(--lwc-colorBackgroundAlt, #ffffff);
-    padding: 2px var(--lwc-varSpacingXxSmall, 4px);
+    padding: 0 var(--lwc-varSpacingXxSmall, -5px);
 }
