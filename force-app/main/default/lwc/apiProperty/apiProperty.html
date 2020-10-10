@@ -4,7 +4,9 @@
             <lightning-input label="Percentage" type="Number" min="0" max="100" 
                 value={percentage} onchange={handlePercentageChange}>
             </lightning-input>
-            <c-chart-bar percentage={percentage}></c-chart-bar>
+            <c-chart-bar 
+                class="slds-show slds-is-relative" 
+                percentage={percentage}></c-chart-bar>
         </div>
         <c-view-source source="lwc/apiProperty" slot="footer">
             Parent-to-child communication. Pass data to a child component using
