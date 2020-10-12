@@ -65,6 +65,7 @@
     <tabs>Apex</tabs>
     <tabs>Composition</tabs>
     <tabs>Child_to_Parent</tabs>
+    <tabs>Parent_to_Child</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LWC_Receipe_UtilityBar</utilityBar>
 </CustomApplication>
