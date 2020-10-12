@@ -5,6 +5,9 @@
                 onclick={handleRefreshTime}></lightning-button>
             <c-clock class="slds-show slds-is-relative"></c-clock>
         </div>
+        <c-view-source source="lwc/apiFunction" slot="footer">
+            Parent-to-child communication. Call a public (@api) function in a child component.
+        </c-view-source>
     </lightning-card>
     
 </template>
