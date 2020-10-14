@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="NavToRelatedList" icon-name="custom:custom96">
+        <template if:true={account.data}>
+            <div class="slds-var-m-around_medium">
+                Example Account:
+                <p>{account.data.Name}</p>
+                <p>{account.data.Type}</p>
+                <p class="slds-var-m-bottom_small">
+                    <lightning-formatted-phone
+                        value={account.data.Phone}
+                    ></lightning-formatted-phone>
+                </p>
+                <lightning-button label="Go to Recent Contact List" title="Go to Recent Contact List"
+                    onclick={handleNavToRelatedList}></lightning-button>
+            </div>
+        </template>
+        <c-view-source source="lwc/navToRelatedList" slot="footer">
+            Navigate to a related list. In this example, Related Contacts.
+        </c-view-source>
+    </lightning-card>
+</template>
