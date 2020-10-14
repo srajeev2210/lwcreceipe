@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="NavToHelloTab" icon-name="custom:custom96">
+        <div class="slds-var-m-around_medium">
+            <lightning-button label="Go to Hello tab" title="Go to Hello tab"
+                onclick={handleNavigateHelloTab}></lightning-button>
+        </div>
+        <c-view-source source="lwc/navToHelloTab" slot="footer">
+            Navigate to a custom page. In this example, the Hello tab.
+        </c-view-source>
+    </lightning-card>
+</template>

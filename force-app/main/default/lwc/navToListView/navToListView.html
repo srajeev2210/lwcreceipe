@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="NavToListView" icon-name="custom:custom96">
+        <div class="slds-var-m-around_medium">
+            <lightning-button label="Go to Recent Contact" title="Go to Recent Contact"
+                onclick={handleNavigateListView}></lightning-button>
+        </div>
+        <c-view-source source="lwc/navToListView" slot="footer">
+            Navigate to a list view. In this example, Recently Viewed Contacts.
+        </c-view-source>
+    </lightning-card>
+</template>
