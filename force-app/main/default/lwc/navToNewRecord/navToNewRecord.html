@@ -1,0 +1,14 @@
+<template>
+
+    <lightning-card title="NavToNewRecord" icon-name="custom:custom96">
+        <div class="slds-var-m-around_medium">
+            <lightning-button label="Go to New Contact" title="Go to New Contact"
+                onclick={handleNavToNewRecord}></lightning-button>
+        </div>
+    
+        <c-view-source source="lwc/navToNewRecord" slot="footer">
+            Navigate to a new record page. In this example, a new contact page.
+        </c-view-source>
+    </lightning-card>
+    
+</template>
