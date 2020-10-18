@@ -3,31 +3,31 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>apiProperty</componentName>
+                <componentName>apexWireMethodToProperty</componentName>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>apexWireMethodToFunction</componentName>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>apexWireMethodWithParams</componentName>
             </componentInstance>
         </itemInstances>
         <name>region1</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentName>apiFunction</componentName>
-            </componentInstance>
-        </itemInstances>
         <name>region2</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentName>apiSetterGetter</componentName>
-            </componentInstance>
-        </itemInstances>
         <name>region3</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Parent-to-Child</masterLabel>
+    <masterLabel>Wire</masterLabel>
     <template>
         <name>flexipage:appHomeTemplateThreeColumns</name>
     </template>

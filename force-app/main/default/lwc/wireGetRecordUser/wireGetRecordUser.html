@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="WireGetRecordUser" icon-name="custom:custom67">
+        <template if:true={currentUser.data}>
+            <div class="slds-var-m-around_medium">
+                <p>Id: {userId}</p>
+                <p>Name: {userName}</p>
+                <p>
+                    <lightning-formatted-email value={userEmail}></lightning-formatted-email>
+                </p>
+            </div>
+        </template>
+        <template if:true={currentUser.error}>
+            <p class="slds-var-m-around_small">{currentUser.error}</p>
+        </template>
+        <c-view-source source='lwc/wireGetRecordUser' slot="footer">
+            Get user information using @wire.
+        </c-view-source>
+    </lightning-card>
+    
+</template>
